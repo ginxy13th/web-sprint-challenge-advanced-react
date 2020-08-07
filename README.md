@@ -29,23 +29,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
-import react, {component}, instead of eport const component, export class component extends component{}. then inside of curly brackets, build the constructor(){}, inside the constructor add super() to bind everything, and this.state = whatever. under constructor componentDidMount if theres an axios call, then render( with a return inside of the component output)
+
+import react, {component}, instead of export const component, export class component extends component{}. then inside of curly brackets, build the constructor(){}, inside the constructor add super() to bind everything, and this.state = whatever. under constructor componentDidMount if theres an axios call, then render( with a return inside of the component output)
 
 2. Describe the different phases of the component lifecycle.
+
 mounting - loading the component, setting up inital states
-updating - updating with changes to data
+updating - updating with changes to state
 unmounting - removal of the component, cleaning up effects
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
-constructor is used during mounting to set up initial vales, render is the output to the DOM, componentDidMount is ran to update data already mounted to the DOM
+constructor is used during mounting to set up initial values, render is the output to the DOM, componentDidMount is ran to update data already mounted to the DOM
 
 4. Define stateful logic.
 code that uses state, basically its dynamic and can change, versus having hardcoded props
 
 5. Describe how to test a React component with React Testing Library.
 
-build the test, render the omponent, declare varibles to find input or text ect, use fireEvent to have test "fill out" inputs, hit buttons ect, then tell the test what to expect as a result of the fireevents
+build the test, render the component, declare varibles to find input or text ect, use fireEvent to have test "fill out" inputs, hit buttons ect, then tell the test what to expect as a result of the fireevents
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

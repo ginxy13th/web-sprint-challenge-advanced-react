@@ -18,6 +18,12 @@ test("form shows success message on submit with form details", () => {
     const zipInput = screen.getByLabelText(/zip:/i)
     const submitButton = screen.getByRole('button', {name: 'Checkout'})
 
+    // const firstnameInput = screen.findByTestId('firstname')
+    // const lastnameInput = screen.findByTestId('lastname')
+    // const addressInput = screen.findByTestId('address')
+    // const cityInput = screen.findByTestId('city')
+    // const stateInput = screen.findByTestId('state')
+    // const zipInput = screen.findByTestId('zipcode')
     
         fireEvent.change(firstnameInput, { target: { value: 'elizabeth' } });
         fireEvent.change(lastnameInput, { target: { value: 'bailey' } });
