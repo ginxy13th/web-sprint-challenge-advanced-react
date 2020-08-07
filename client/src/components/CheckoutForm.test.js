@@ -15,7 +15,7 @@ test("form shows success message on submit with form details", () => {
     const addressInput = screen.getByLabelText(/address:/i)
     const cityInput = screen.getByLabelText(/city:/i)
     const stateInput = screen.getByLabelText(/state:/i)
-    const zipInput = screen.getByLabelText(/zip/i)
+    const zipInput = screen.getByLabelText(/zip:/i)
     const submitButton = screen.getByRole('button', {name: 'Checkout'})
 
     
